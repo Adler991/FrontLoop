@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 1 - Step 9</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<section class="center">
+		<div class="left">
+			<div class="left-center">
+				<div class="title-wr">
+					<h3 class="title">My Wallets</h3>
+					<p class="plus"></p>
+				</div>
+				<div class="card card-visa">
+					<div class="logo visa"></div>
+					<span class="srn">
+						**** **** **** 2562
+					</span>
+					<span class="val-date">
+						Valid thru: 12/17
+					</span>
+				</div>
+				<div class="card card-mastercard">
+					<div class="logo mastercard"></div>
+					<span class="srn">
+						**** **** **** 2101
+					</span>
+					<span class="val-date">
+						Valid thru: 07/19
+					</span>
+				</div>
+				<div class="card card-maestro">
+					<div class="logo maestro"></div>
+					<span class="srn">
+						**** **** **** 8335
+					</span>
+					<span class="val-date">
+						Valid thru: 09/17	
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="right">
+			<div class="right-center">
+				<div class="title-wr">
+					<h3 class="title">Current Ballance</h3>
+					<p class="numbers">$729.<sup>00</sup></p>
+				</div>
+				<div class="line"></div>
+				<div class="string-wr">
+					<div class="wr"></div>
+					<div class="conteiner">
+						<span class="top">
+							Apple iPhone 7, 128 GB
+						</span>
+						<span class="bot">
+							Electronics #32343424 - 12 July 2015
+						</span>
+					</div>
+					<span class="number">$650.<sup>00</sup></span>
+				</div>
+				<div class="string-wr">
+					<div class="wr plus-r"></div>
+					<div class="conteiner">
+						<span class="top">
+							Funds Added
+						</span>
+						<span class="bot">
+							Payment #5435 - 11July 2015
+						</span>
+					</div>
+					<span class="number green">$900.<sup>00</sup></span>
+				</div>
+				<div class="string-wr">
+					<div class="wr"></div>
+					<div class="conteiner">
+						<span class="top">
+							Energy Bill
+						</span>
+						<span class="bot">
+							Other #745237423 - 11 July 2015
+						</span>
+					</div>
+					<span class="number">$84.<sup>90</sup></span>
+				</div>
+				<div class="string-wr">
+					<div class="wr"></div>
+					<div class="conteiner">
+						<span class="top">
+							The Eye Cinema Ticket
+						</span>
+						<span class="bot">
+							Entertainment #32343424 - 10 July 2015
+						</span>
+					</div>
+					<span class="number">$40.<sup>00</sup></span>
+				</div>
+				<div class="string-wr">
+					<div class="wr"></div>
+					<div class="conteiner">
+						<span class="top">
+							McFood Restaurant
+						</span>
+						<span class="bot">
+							Cafes #32448 - July 2015
+						</span>
+					</div>
+					<span class="number">$10.<sup>50</sup> </span>
+				</div>
+				<div class="string-wr">
+					<div class="wr"></div>
+					<div class="conteiner">
+						<span class="top">
+							Gas Station
+						</span>
+						<span class="bot">
+							Other #2138453 - 10 July 2015
+						</span>
+					</div>
+					<span class="number">$30.<sup>00</sup> </span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script>
+		$(document).ready(function() {
+
+			$('div.card-visa,div.card-mastercard,div.card-maestro').on("click", function () {
+					console.log('1');
+					$('div.card').removeClass("active");
+					$( this ).addClass("active");
+
+			});
+		});
+	</script>
+</body>
+</html>

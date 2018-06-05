@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loop 3 - Step 1</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<section class="center">
+    <section class="left">
+        <span class="number">39</span>
+        <div class="wr">
+            <img src="./img/preview.png" class="sneakers">
+            <div class="circle circle-one">
+                <div class="plus"></div>
+                <div class="plus-hor"></div>
+                <div class="plus"></div>
+            </div>
+            <div class="circle circle-two">
+                <div class="plus"></div>
+                <div class="plus-hor"></div>
+                <div class="plus"></div>
+            </div>
+            <div class="circle circle-three">
+                <div class="plus"></div>
+                <div class="plus-hor"></div>
+                <div class="plus"></div>
+            </div>
+        </div>
+        <div class="round-wr">
+            <div class="round"></div>
+            <div class="round round-middle"></div>
+            <div class="round"></div>
+        </div>
+    </section>
+    <section class="right">
+        <div class="wrapper">
+            <h1 class="title">Nike Flyknit</h1>
+            <span class="span-wr">
+                <span class="span-wr__left-span">$189.00</span>
+                <span class="span-wr__right-span">$259.00</span>
+            </span>
+            <p class="desc">With a flexible Flyknit upper placed directly on top of a radically reinvented Air
+                cushioning system, The Nike Air VaporMax defies conventional style and provides an unbelievably light,
+                bouncy and flexible feel.</p>
+            <div class="size-row m">
+                <span class="size">Size</span>
+                <div class="size-wr">
+                    <span class="size-row__size size-one">S</span>
+                    <span class="size-row__size size-two">M</span>
+                    <span class="size-row__size size-three">L</span>
+                    <span class="size-row__size size-four">XL</span>
+                    <span class="size-row__size size-five">XXL</span>
+                </div>
+            </div>
+            <div class="size-row size-row-add">
+                <span class="size size-add">Amount</span>
+                <div class="n-wr">
+                    <div class="number-size-before"></div>
+                    <span class="number-size">2</span>
+                    <div class="number-size-after"></div>
+                </div>
+            </div>
+            <button class="button">Buy now</button>
+        </div>
+    </section>
+</section>
+<script>
+    $(document).ready(function () {
+        $('.size-one,.size-two,.size-three,.size-four,.size-five').on("click", function () {
+
+            $('.size-row__size').removeClass("active");
+            $(this).addClass("active");
+
+        });
+    });
+</script>
+</body>
+</html>

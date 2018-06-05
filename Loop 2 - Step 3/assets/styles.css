@@ -1,0 +1,165 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+
+body {
+	background: linear-gradient( #b884e5 , #8085e8) no-repeat;
+	padding-bottom: 220px;
+}
+
+
+.center {
+	width: 100%;
+	max-width: 300px;
+	margin: 100px auto 0;
+
+	
+	box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.4);
+	border-radius: 4px;
+}
+
+.center-wr {
+	width: 100%;
+	max-width: 250px;
+	margin: 0px auto 0;
+	
+}
+
+.center-wrp {
+	padding-bottom: 20px;
+}
+
+.top {
+	background: linear-gradient(45deg, #bc7eda , #a479d1) no-repeat;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+}
+
+
+.line-top {
+	height: 40px;
+	
+	border-left: 2px solid #fff;
+}
+
+.top-wr {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.top-bg {
+	height: 24px;
+	width: 24px;
+	margin-left: -11px;
+	margin-right: 11px;
+
+	background: url(img/photo.svg) center center no-repeat, #fff;
+	border-radius: 50%;
+	-webkit-background-size: 15px 15px, cover;
+	background-size: 15px 15px, cover;
+}
+
+.photo-wr {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.span {
+	font-family: Roboto, Arial, sans-serif;
+
+	color: #fff;
+}
+
+.arrow {
+	height: 12px;
+	width: 12px;
+
+	background:  url(img/arrow.svg) -6px -8px no-repeat;
+}
+
+.middle {
+	background: #5f5280;
+}
+
+.grey-line {
+	height: 28px;
+	border-left: 2px solid #afa9c0;
+}
+
+.list {
+
+	list-style: none;
+}
+
+.item {
+	position: relative;
+
+	margin-left: 24px;
+}
+
+ .item::before {
+	position: absolute;
+	top: calc(50% - 4px);
+	left: -27px;
+	content: '';
+	height: 8px;
+	width: 8px;
+
+	background: #fff;
+	border-radius: 50%;
+} 
+
+.link	{
+
+	font-family: Roboto, Arial, sans-serif;
+
+	text-decoration: none;
+	color: #ccc;
+}
+
+.link:hover {
+	color: #fff;
+}
+
+
+.small-grey-line {
+	height: 16px;
+	border-left: 2px solid #afa9c0;
+}
+
+.line {
+	height: 20px;
+	border-left: 2px solid #fff;
+}
+
+.bot {
+	background: linear-gradient(45deg, #bc7eda , #a479d1) no-repeat;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.bot-bg {
+	height: 24px;
+	width: 24px;
+	margin-left: -11px;
+	margin-right: 11px;
+
+	background: url(img/folder.svg) center center no-repeat, #fff;
+	border-radius: 50%;
+	-webkit-background-size: 15px 15px, cover;
+	background-size: 15px 15px, cover;
+}

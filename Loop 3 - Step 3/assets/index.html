@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loop 3 - Step 3</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<section class="center">
+    <div class="wr wr-l">
+        <div class="wrapper l">
+            <div class="side__img left__img">
+                <img class="img" src="./img/justice-league.jpg" alt="">
+            </div>
+            <div class="left">
+
+                <span class="title">Justice League</span>
+                <span class="string">You can't save the world alone.</span>
+                <span class="t-number">$28.00</span>
+                <span class="b-number">$44.99</span>
+                <button class="button">Buy now</button>
+            </div>
+        </div>
+    </div>
+    <div class="wr wr-r">
+        <div class="wrapper r">
+            <div class="side__img right__img">
+                <img class="img" src="./img/blade-runner.jpg" alt="">
+            </div>
+            <div class="right">
+
+                <span class="title">Justice League</span>
+                <span class="string">You can't save the world alone.</span>
+                <span class="t-number">$28.00</span>
+                <span class="b-number">$44.99</span>
+                <button class="button">Buy now</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    $(document).ready(function () {
+
+        $('.left__img, .right__img').hover(
+            function () {
+                $(this).siblings().addClass("side");
+                $(this).siblings().children().css({"display": "block"});
+
+            }, function () {
+                $(".wrapper").hover(
+                    function () {
+
+                    }, function () {
+                        $(".side").children().css({"display": "none"});
+                        $(".side").removeClass("side");
+                    });
+                /*$(this).siblings().removeClass("side");
+                $(this).siblings().children().css({"display":"none"});*/
+
+            });
+    });
+</script>
+
+</body>
+</html>

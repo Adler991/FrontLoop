@@ -1,0 +1,141 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	padding: 50px 0;
+	background: #4b4f5b;
+}
+
+.center {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1050px;
+	border-radius: 3px;
+}
+
+.left-conteiner {
+	width: 61.9047619%;
+	background: #fff;
+}
+
+.right-conteiner {
+	
+	width: 38.095238%;
+	
+	/*height: 100%;*/
+	min-height: 630px;
+	background: url(img/side.jpg) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.content {
+	width: 100%;
+	max-width: 530px;
+	margin: 0 auto;
+	padding: 75px 0 0;
+}
+
+h1 {
+	margin-bottom: 12px;
+	font-family: Roboto, sans-serif;
+	font-size: 40px;
+	font-weight: normal;
+}
+
+span {
+	display: block;
+	
+	font-size: 14px;
+	font-family: Roboto, sans-serif;
+	color: #aaa;
+}
+
+.last-span {
+	margin-bottom: 65px;
+}
+
+.button {
+	width: 100%;
+	padding: 21px 0;
+	margin-bottom: 20px;
+
+	font-size: 14px;
+	font-family: Roboto, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: 1px solid #eef0f3;
+	border-radius: 3px;
+	background-color: #fff;
+	color: #8b8b8b;
+}
+
+
+.google {
+	background: url(img/googleplus.svg) 20px center no-repeat;
+	-webkit-background-size: 24px;
+	background-size: 24px;
+}
+
+.fb {
+	background: url(img/facebook.svg) 20px center no-repeat;
+	-webkit-background-size: 24px;
+	background-size: 24px;
+}
+
+.tt {
+	margin-bottom: 80px;
+	background: url(img/twitter.svg) 20px center no-repeat;
+	-webkit-background-size: 24px;
+	background-size: 24px;
+}
+
+.button:hover {
+	box-shadow: 0px 6px 14px #aaaaaa;
+	background-position: 21px center;
+	padding: 22px 0;
+	cursor: pointer;
+	border: none;
+	color: #000;
+}
+
+.line {
+	margin-bottom: 40px;
+	background: #eef0f3;
+	height: 1px;
+}
+
+.padding {
+	padding: 0 0 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.padding p {
+	font-family: Roboto, sans-serif;
+}
+
+.padding button {
+	text-transform: uppercase;
+	border: none;
+	background: none;
+	font-weight: bold;
+	color: #8b8b8b;
+}
+
+.padding button:hover {
+	color: #000;
+	cursor: pointer;
+}

@@ -1,0 +1,303 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.header-sec {
+	padding-bottom: 230px;
+
+	border-bottom: 1px solid #e0dfdf;
+	background: #fff url(../img/watches.jpg) right bottom no-repeat;
+	-webkit-background-size:  auto 86.3%;
+	background-size:  auto 86.3%;
+}
+
+.center {
+	width: 96%;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.center-header {
+	padding-top: 50px;
+}
+
+.header {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	margin-bottom: 146px;
+}
+
+.logo {
+	height: 20px;
+	width: 20px;
+	background: url(../img/logo.svg) 0 -10px no-repeat;
+}
+
+.navigation-ul {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	list-style: none;
+}
+
+.navigation-ul:last-child {
+	position: relative;
+}
+
+.link,
+.last-a {
+	display: block;
+	margin: 0 16px;
+	
+	font-size: 14px;
+	font-family: Roboto, Arial, sans-serif;
+	text-decoration: none;
+	color: #999;
+}
+
+.link {
+	padding-bottom: 10px;
+}
+
+.link:hover {
+	padding-bottom: 9px;
+	color: #000;
+	border-bottom: 1px solid #817c71;
+}
+
+.last-a {
+	height: 16px;
+	max-width: 146px;
+	margin: 0px 0 0 30px;
+	padding-right: 5px;
+
+	font-size: 14px;
+
+	border-bottom: 1px solid  #817c71;
+	border: none;
+	color: #000;
+}
+
+.input-wr::after {
+	position: absolute;
+	right: 0;
+	bottom: 6px;
+	z-index: 2;
+	content: '';
+	width: 146px;
+	height: 1px;
+	background: #817c71;
+}
+
+.last-a:focus {
+	outline: none;
+	border: none;
+}
+
+.header__title {
+	margin-bottom: 50px;
+
+	font-size: 40px;
+	font-family: Roboto, Arial, sans-serif;
+}
+
+.header__desc {
+	max-width: 400px;
+	margin-bottom: 40px;
+	padding-left: 30px;
+
+	font-family: Roboto, Arial, sans-serif;
+	color: #999;
+	border-left: 2px solid #999;
+}
+
+.button {
+	padding: 11px 20px;
+
+	text-transform: uppercase;
+
+	background: #ea625c;
+	color: #fff;
+	border: none;
+}
+
+.button:hover {
+	background: #e16863;
+	cursor: pointer;	
+}
+
+.buttom:focus {
+	outline: none;
+}
+
+/*------------------------------------------------------------*/
+
+.middle-center {
+	padding: 40px 0 40px;
+}
+
+.column-wr {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.column-conteiner {
+	margin-bottom: 80px;
+}
+
+.column__title {
+	margin-bottom: 40px;
+
+	font-size: 15px;
+	font-family: Roboto, Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+.column__desc {
+	max-width: 250px;
+	margin-bottom: 15px;
+
+	font-size: 14px;
+	line-height: 1.785;
+	font-family: Roboto, Arial, sans-serif;
+}
+
+.bot-wr {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.square {
+	height: 4px;
+	width: 4px;
+	margin-right: 10px;
+
+	background: #c7c8c8;
+}
+
+.bot-wr-r {
+	position: relative;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	transition: all 1s ease-out 1s;
+}
+
+.wr-r__span {
+	display: block;
+	margin-left: 43px;
+	
+	font-size: 13px;
+	font-family: Roboto, Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	color: #ea625c;
+	transition: all 0.3s ease-out 0s;
+}
+
+.wr-r__span::before {
+	position: absolute;
+	left: 0px;
+	top: 7.5px;
+	z-index: 2;
+	content: '';
+	height: 1px;
+	width: 30px;
+	
+	transition: all 0.3s ease-out 0s;
+	background: #ea625c;
+}
+
+.wr-r__span:hover {
+	margin-left: 53px;
+	cursor: pointer;
+}
+
+.wr-r__span:hover::before {
+	width: 40px;
+}
+
+.right img {
+	height: 600px;
+	width: 	auto;
+}
+
+.bot-container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;	
+	justify-content: space-between;	
+}
+
+.left {
+	padding-top: 128px;	
+}
+
+.w {
+	max-width: 304px;	
+}
+
+.bot {
+	background:  url(../img/runners.jpg) 0 0 no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+
+	color: #fff;
+}
+
+.bot-center {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 80px;
+	padding-bottom: 200px;
+}
+
+.bot p {
+	border-left: 1px solid #fff;
+	color: #fff;
+}
+
+
+
+@media screen and (max-width: 820px) {
+    .header-sec {
+        background-position: 470px bottom;
+    }
+}
+
+
+
+
+
+
+
+

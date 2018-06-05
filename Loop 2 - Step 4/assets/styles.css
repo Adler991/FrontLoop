@@ -1,0 +1,159 @@
+ * {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	padding-top: 100px;
+
+	background: #55557e;
+}
+
+.top {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 100%;
+	max-width: 374px;
+	margin: 0 auto 25px;
+
+	background: #3d3e52;
+}
+
+
+.svg {
+	fill: #aaaabf;
+}
+
+.first,
+.second,
+.middle,
+.four,
+.five {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	width: 75px;
+	padding: 18px 0;
+}
+
+.first:hover,
+.second:hover,
+.four:hover,
+.five:hover {
+	background: #2C2D38;
+	cursor: pointer;
+}
+
+.first {
+	border-right: 1px solid #777898;
+}
+
+.five {
+	border-left: 1px solid #777898;
+}
+
+.middle {
+	background: #252525;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	transform: scale(1.28);
+	
+}
+
+
+/*---------------------------*/
+
+.form {
+	width: 100%;
+	max-width: 300px;
+	margin: 0 auto;
+
+	font-family: Roboto, Arial, sans-serif;
+
+	border-radius: 3px;
+}
+
+.form-top {
+	padding-bottom: 20px;
+	padding-top: 78px;
+	
+	background:  url(img/food.jpg) 0 0 no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	color: #fff;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+}
+
+/* .wr {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+} */
+
+.title {
+	margin: 0 20px 4px;
+
+	font-size: 26px;
+}
+
+.city {
+	padding-left: 19px;
+	margin: 0 20px;
+
+	background: url(img/location.svg) -1px 0px no-repeat;
+	-webkit-background-size: 18px;
+	background-size: 18px;
+}
+
+.form-bot {
+	background: #fff;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.string {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 20px 19px;
+
+	color: #dedede;
+	border-bottom: 1px solid #dedede;
+}
+
+.no-border {
+	border: none;
+}
+
+.number {
+	transition: all 0.15s linear 0s;
+}
+
+.string:hover {
+	cursor: pointer;
+}
+
+.string:hover .number {
+	transform: scale(1.28);
+	color: #000;
+}
+
+
+
+
+
+
